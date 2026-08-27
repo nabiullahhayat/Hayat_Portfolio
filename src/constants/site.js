@@ -1,0 +1,37 @@
+export const SITE_CONFIG = {
+  name: 'Nabiullah Hayat',
+  shortName: 'Hayat',
+  title: 'Full-Stack Web Developer',
+  tagline:
+    'Building scalable web applications and intelligent software solutions — from full-stack development to AI, ML, and robotics.',
+  email: 'nabiullahhayat.786@gmail.com',
+  phone: '0707014021',
+  phoneDisplay: '+93 70 701 4021',
+  whatsapp: 'https://wa.me/93707014021',
+  location: 'Kandahar, Afghanistan',
+  image: '/hayat.png',
+  resume: '/nabiullah.pdf',
+  social: {
+    github: 'https://github.com/nabiullahhayat',
+    linkedin: 'https://www.linkedin.com/in/nabiullah-hayat-867869298/',
+    facebook: 'https://www.facebook.com/eng.nabiullah.hayat',
+    instagram: 'https://www.instagram.com/nabiullahhayat/',
+  },
+  stats: [
+    { value: '3+', label: 'Years in Web Development' },
+    { value: '10+', label: 'Real-World Projects' },
+    { value: '10+', label: 'Technologies' },
+  ],
+  techStack: [
+    'React',
+    'Next.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Python',
+    'React Native',
+    'Tailwind CSS',
+    'ESP32',
+    'IoT',
+  ],
+}
