@@ -32,6 +32,7 @@ export const ABOUT_CONTENT = {
     devops: ['Vercel', 'Render', 'cPanel'],
     mobile: ['React Native', 'Expo'],
     iot: ['ESP32 S3', 'Arduino'],
+    collaboration: ['Linear', 'Slack'],
   },
 
   achievements: [

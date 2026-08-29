@@ -17,6 +17,7 @@ export const EXPERIENCE_CONTENT = {
       responsibilities: [
         'Develop and maintain business software applications.',
         'Build and improve user-friendly features and digital workflows.',
+        'Coordinate tasks and sprints using Linear; collaborate via Slack for team communication and document sharing.',
         'Troubleshoot issues, optimize system performance, and implement new features.',
       ],
       technologies: [
@@ -29,6 +30,8 @@ export const EXPERIENCE_CONTENT = {
         'Express.js',
         'SQLite',
         'Electron',
+        'Linear',
+        'Slack',
         'Git',
         'GitHub',
       ],

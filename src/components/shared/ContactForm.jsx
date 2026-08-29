@@ -28,12 +28,29 @@ function ContactForm() {
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.trim()
 
     if (!accessKey || accessKey === 'your_access_key_here') {
-      toast.error('Web3Forms access key is not configured.', {
-        description: 'Add VITE_WEB3FORMS_ACCESS_KEY to your .env file.',
+      const subject = encodeURIComponent(
+        form.subject || `Portfolio Contact from ${form.name}`,
+      )
+      const body = encodeURIComponent(
+        [
+          `Name: ${form.name}`,
+          `Email: ${form.email}`,
+          `Project Type: ${form.projectType || 'Not specified'}`,
+          '',
+          form.message,
+        ].join('\n'),
+      )
+
+      window.location.href = `mailto:${SITE_CONFIG.email}?subject=${subject}&body=${body}`
+
+      toast.success('Opening your email app…', {
+        description:
+          'Complete the message in your mail app to send it. To enable direct form delivery, add your Web3Forms key to .env',
       })
+      setForm(initialForm)
       return
     }
 

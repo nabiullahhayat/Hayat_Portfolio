@@ -19,6 +19,7 @@ const skillCategories = [
   { key: 'devops', label: 'DevOps & Tools', color: 'cyan' },
   { key: 'mobile', label: 'Mobile Apps', color: 'violet' },
   { key: 'iot', label: 'IoT & Hardware', color: 'emerald' },
+  { key: 'collaboration', label: 'Collaboration & Workflow', color: 'cyan' },
 ]
 
 const colorMap = {
