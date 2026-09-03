@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react'
-import { motion } from 'framer-motion'
 import { AWARDS_CONTENT } from '../constants/awards'
 import { ROUTES } from '../constants/routes'
 import Container from '../components/ui/Container'
@@ -106,20 +105,19 @@ function Awards() {
         </AnimatedSection>
 
         {/* Awards Grid */}
-        <motion.div
-          layout
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          {filteredAwards.map((award, index) => (
-            <AwardCard key={award.id} award={award} index={index} />
-          ))}
-        </motion.div>
+        <AnimatedSection className="mb-8 sm:mb-10">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredAwards.map((award, index) => (
+              <AwardCard key={award.id} award={award} index={index} />
+            ))}
+          </div>
 
-        {filteredAwards.length === 0 && (
-          <p className="py-12 text-center text-slate-500">
-            No awards in this category.
-          </p>
-        )}
+          {filteredAwards.length === 0 && (
+            <p className="py-12 text-center text-slate-500">
+              No awards in this category.
+            </p>
+          )}
+        </AnimatedSection>
 
         {/* CTA */}
         <AnimatedSection className="mt-12 sm:mt-16">

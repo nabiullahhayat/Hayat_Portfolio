@@ -15,9 +15,8 @@ function AwardCard({ award, index }) {
     <>
       <motion.article
         initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-40px' }}
-        transition={{ duration: 0.45, delay: index * 0.08 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
         className="group overflow-hidden rounded-3xl border border-white/8 bg-white/[0.02] transition-colors hover:border-white/15 hover:bg-white/[0.04]"
       >
         <button
@@ -30,7 +29,7 @@ function AwardCard({ award, index }) {
             <img
               src={award.image}
               alt={award.title}
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent" />

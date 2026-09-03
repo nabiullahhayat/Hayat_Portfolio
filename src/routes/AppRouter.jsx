@@ -7,6 +7,7 @@ import {
   Contact,
   Experience,
   Home,
+  NotFound,
   Projects,
 } from '../pages'
 import { ROUTES } from '../constants/routes'
@@ -23,6 +24,7 @@ export const appRouter = createBrowserRouter([
       { path: ROUTES.AWARDS.slice(1), element: <Awards /> },
       { path: ROUTES.CERTIFICATES.slice(1), element: <Certificates /> },
       { path: ROUTES.CONTACT.slice(1), element: <Contact /> },
+      { path: '*', element: <NotFound /> },
     ],
   },
 ])
