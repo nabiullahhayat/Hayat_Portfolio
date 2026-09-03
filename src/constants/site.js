@@ -10,6 +10,7 @@ export const SITE_CONFIG = {
   whatsapp: 'https://wa.me/93707014021',
   location: 'Kandahar, Afghanistan',
   image: '/hayat.png',
+  icon: '/nh.png',
   resume: '/nabiullah.pdf',
   social: {
     github: 'https://github.com/nabiullahhayat',

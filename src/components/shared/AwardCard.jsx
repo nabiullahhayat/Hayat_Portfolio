@@ -16,6 +16,7 @@ function AwardCard({ award, index }) {
       <motion.article
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
+        whileHover={{ y: -6, transition: { duration: 0.25 } }}
         transition={{ duration: 0.45, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
         className="group overflow-hidden rounded-3xl border border-white/8 bg-white/[0.02] transition-colors hover:border-white/15 hover:bg-white/[0.04]"
       >
